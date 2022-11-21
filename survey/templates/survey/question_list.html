@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<table class="table">
+  <thead class="table-dark">
+    <th scope="col">#</th>
+    <th scope="col">Question</th>
+  </thead>
+  <tbody>
+    {% for object in object_list %}
+    <td>1</td>
+    <td>{{ object.text }}</td>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock content%}
