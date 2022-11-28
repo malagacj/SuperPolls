@@ -10,6 +10,10 @@ class QuestionListView(ListView):
     model = Question
 
 
+class QuestionListView(ListView):
+    model = Question
+
+
 #class QuestionCreateView(LoginRequiredMixin, CreateView):
 class QuestionCreateView(CreateView):
     model = Question

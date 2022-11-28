@@ -5,7 +5,7 @@ from . import views
 app_name = 'survey'
 
 urlpatterns= [
-    path('', RedirectView.as_view(url='question/create/'), name='index'),
+    path('', RedirectView.as_view(url='question/'), name='index'),
 
     # Question
     path(

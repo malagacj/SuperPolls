@@ -1,17 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content%}
-<table class="table">
-  <thead class="table-dark">
-    <th scope="col">#</th>
-    <th scope="col">Question</th>
-  </thead>
-  <tbody>
-    {% for object in object_list %}
-    <td>1</td>
-    <td>{{ object.text }}</td>
-    {% endfor %}
-  </tbody>
-</table>
-
+<ol class="list-group list-group-numbered">
+  {% for object in object_list %}
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">{{ object.text }}</div>
+      {{ object.text }}
+    </div>
+    <span class="badge bg-primary rounded-pill">{{ question.number_of_votes }}</span>
+  </li>
+  {% endfor %}
+</ol>
 {% endblock content%}
