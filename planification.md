@@ -3,8 +3,8 @@
 ## Tasks
 ### Static files
 - [X] Configure static settings
-- [ ] Create scripts folder
-- [ ] Create static script
+- [X] Create scripts folder
+- [X] Create static script
 - [ ] Create refresh script
 
 ### Bootstrap
