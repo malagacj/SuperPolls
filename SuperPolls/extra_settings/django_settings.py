@@ -10,7 +10,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'secure_secret_key')
 
 DEBUG = False if 'DEBUG_FALSE' in os.environ else True
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+if any(HOSTS):
+    ALLOWED_HOSTS += HOSTS
 
 INSTALLED_APPS += [
     'survey',
