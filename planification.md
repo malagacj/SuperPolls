@@ -5,7 +5,7 @@
 - [X] Configure static settings
 - [X] Create scripts folder
 - [X] Create static script
-- [ ] Create refresh script
+- [X] Create refresh script
 
 ### Bootstrap
 - [ ] Select List Template
