@@ -2,7 +2,7 @@
 
 ## Tasks
 ### Static files
-- [ ] Configure static settings
+- [X] Configure static settings
 - [ ] Create scripts folder
 - [ ] Create static script
 - [ ] Create refresh script
