@@ -14,8 +14,23 @@ urlpatterns= [
         name='question_list'
     ),
     path(
+        'question/<int:pk>/',
+        views.QuestionDetailView.as_view(),
+        name='question_detail'
+    ),
+    path(
         'question/create/',
         views.QuestionCreateView.as_view(),
         name='question_create'
-    )
+    ),
+    path(
+        'question/<int:pk>/update/',
+        views.QuestionUpdateView.as_view(),
+        name='question_update'
+    ),
+    path(
+        'question/<int:pk>/delete/',
+        views.QuestionDeleteView.as_view(),
+        name='question_delete'
+    ),
  ]

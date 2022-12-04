@@ -4,6 +4,17 @@
 <form method='post'>
   {% csrf_token %}
   {{ form }}
+  <button type="submit">Submit</button>
+</form>
+{% endblock content%}
+
+
+
+{% comment %}
+{% block content%}
+<form method='post'>
+  {% csrf_token %}
+  {{ form }}
   <br>
   <br>
   {{ formset.management_form }}
@@ -14,3 +25,4 @@
   <button type="submit">Submit</button>
 </form>
 {% endblock content%}
+{% endcomment %}

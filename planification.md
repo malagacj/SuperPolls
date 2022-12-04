@@ -7,18 +7,18 @@
 - [X] Create static script
 - [X] Create refresh script
 
+### Question
+- [X] List Question
+- [X] Detail Question
+- [X] Create Question
+- [X] Update Question
+- [X] Delete Question
+
 ### Bootstrap
 - [ ] Select List Template
 - [ ] Select Detail Template
 - [ ] Select Create/Update Template
 - [ ] Select Delete Template
-
-### Question
-- [ ] List Question
-- [ ] Detail Question
-- [ ] Create Question
-- [ ] Update Question
-- [ ] Delete Question
 
 ### Option
 - [ ] Include Option in Question Detail
