@@ -31,3 +31,8 @@ cd $project_name/static
 URL="https://github.com/twbs/bootstrap/releases/download/v5.2.3/bootstrap-5.2.3-dist.zip"
 FILENAME="bootstrap5"
 download_zip $URL $FILENAME
+
+## Bootstrap5 Examples
+URL="https://github.com/twbs/bootstrap/releases/download/v5.2.3/bootstrap-5.2.3-examples.zip"
+FILENAME="bootstrap5_examples"
+download_zip $URL $FILENAME
