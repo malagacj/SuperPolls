@@ -26,6 +26,9 @@ class Question(models.Model):
         related_name='updated_questions'
     )
 
+    def __str__(self):
+        return self.text
+
 
 class Option(models.Model):
     question = models.ForeignKey(Question,

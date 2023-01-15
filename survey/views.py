@@ -12,6 +12,7 @@ from .forms import OptionFormSet
 
 class QuestionListView(ListView):
     model = Question
+    paginate_by = 3
 
 
 class QuestionDetailView(DetailView):
