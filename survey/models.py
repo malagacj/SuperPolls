@@ -32,10 +32,13 @@ class Question(models.Model):
 
 class Option(models.Model):
     question = models.ForeignKey(Question,
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         null=True
     )
     text = models.CharField(max_length=100)
+
+    def __str__(self):
+        return f'{self.text} ({self.question.id}, {self.question})'
 
 
 class Answer(models.Model):

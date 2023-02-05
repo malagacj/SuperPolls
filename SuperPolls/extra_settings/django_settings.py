@@ -35,8 +35,8 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 
 FILE_UPLOAD_PERMISSIONS = 0o644
 
-#LOGIN_URL = '/login/'
-#LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/admin/login/'
+LOGIN_REDIRECT_URL = '/'
 
 
 #try:

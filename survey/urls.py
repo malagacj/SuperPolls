@@ -13,6 +13,11 @@ urlpatterns= [
         views.QuestionListView.as_view(),
         name='question_list'
     ),
+        path(
+        'question_f/',
+        views.question_list,
+        name='question_f_list'
+    ),
     path(
         'question/<int:pk>/',
         views.QuestionDetailView.as_view(),
